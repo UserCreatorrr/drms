@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <script>history.scrollRestoration="manual";</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casos Clínicos · Dra. Marisa Sánchez</title>
+  <meta name="description" content="Galería de casos clínicos reales de endodoncia, cirugía oral y odontología restauradora realizados por la Dra. Marisa Sánchez en Madrid.">
+  <link rel="stylesheet" href="css/styles.css?v=20">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header header--hero" id="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.png?v=20260515-newphotos" alt="Marisa Sánchez Odontología" class="header__logo-img">
+        <span class="header__logo-fallback">
+          <span class="header__logo-name">Dra. Marisa Sánchez</span>
+          <span class="header__logo-tagline">Odontología de Precisión</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="sobre-mi.html" class="nav__link">Sobre Mí</a></li>
+          <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+          <li><a href="casos-clinicos.html" class="nav__link active">Casos Clínicos</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+        <a href="contacto.html" class="btn btn--gold nav__cta">Solicitar Cita</a>
+      </nav>
+      <button class="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-mobile">
+  <ul class="nav-mobile__list">
+    <li><a href="index.html" class="nav-mobile__link">Inicio</a></li>
+    <li><a href="sobre-mi.html" class="nav-mobile__link">Sobre Mí</a></li>
+    <li><a href="servicios.html" class="nav-mobile__link">Servicios</a></li>
+    <li><a href="casos-clinicos.html" class="nav-mobile__link">Casos Clínicos</a></li>
+    <li><a href="contacto.html" class="nav-mobile__link">Contacto</a></li>
+  </ul>
+  <a href="contacto.html" class="btn btn--gold nav-mobile__cta">Solicitar Cita</a>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<div class="page-hero" style="padding-top: var(--header-h);">
+  <div class="page-hero__bg" style="background-image: url('images/hero-bg.jpg?v=20260515-newphotos');"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <p class="label label--white">Resultados Reales</p>
+      <h1>Casos Clínicos</h1>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CASOS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header section-header--center fade-in">
+      <span class="label">Galería</span>
+      <h2 style="color:var(--navy);">Resultados de mis tratamientos</h2>
+      <p>Cada caso es único. Estos son algunos ejemplos reales del trabajo realizado con dedicación, precisión y respeto por el paciente. Las imágenes se muestran con consentimiento.</p>
+    </div>
+
+    <!-- Galería casos seleccionados -->
+    <div class="casos-masonry fade-in">
+
+      <!-- Cirugía Oral -->
+      <div class="casos-masonry__item" data-category="cirugia">
+        <img src="images/cirugia-extraccion.png?v=20260515-newphotos" alt="Cirugía Oral" class="casos-masonry__img" data-lightbox="galeria">
+        <div class="casos-masonry__caption">Cirugía Oral</div>
+      </div>
+
+      <!-- Endodoncia control -->
+      <div class="casos-masonry__item" data-category="endodoncia">
+        <img src="images/endo-caso4.jpg?v=20260515-newphotos" alt="Endodoncia · Control" class="casos-masonry__img" data-lightbox="galeria">
+        <div class="casos-masonry__caption">Endodoncia · Control</div>
+      </div>
+
+      <!-- Endodoncia resultado -->
+      <div class="casos-masonry__item" data-category="endodoncia">
+        <img src="images/endo-caso1-despues.jpg?v=20260515-newphotos" alt="Endodoncia · Resultado" class="casos-masonry__img" data-lightbox="galeria">
+        <div class="casos-masonry__caption">Endodoncia · Resultado</div>
+      </div>
+
+      <!-- Caso clínico adicional -->
+      <div class="casos-masonry__item" data-category="restauradora">
+        <img src="images/casos-clinicos-extra.png?v=20260515-newphotos" alt="Caso clínico restaurador" class="casos-masonry__img" data-lightbox="galeria">
+        <div class="casos-masonry__caption">Caso Clínico</div>
+      </div>
+
+    </div>
+
+    <!-- Nota legal -->
+    <p style="text-align:center; color:var(--text-light); font-size:0.8rem; margin-top:48px;">
+      * Las imágenes clínicas se muestran con el consentimiento informado de los pacientes y únicamente con fines informativos.
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="images/logo.png?v=20260515-newphotos" alt="Marisa Sánchez Odontología" class="footer__logo-img">
+        <p class="footer__tagline">Diagnóstico integral, técnica precisa y atención completamente personalizada.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Navegación</p>
+        <nav class="footer__nav">
+          <a href="index.html">Inicio</a>
+          <a href="sobre-mi.html">Sobre Mí</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="casos-clinicos.html">Casos Clínicos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer__col-title">Contacto</p>
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            <a href="tel:+34618064798">618 064 798</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            <a href="mailto:contacto@dramarisasanchez.com">contacto@dramarisasanchez.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__legal">&copy; 2025 Dra. Marisa Sánchez &mdash; Todos los derechos reservados</p>
+      <div class="footer__legal" style="display:flex;gap:20px;">
+        <a href="politica-privacidad.html">Política de Privacidad</a>
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox__close">&times;</span>
+  <span class="lightbox__prev">&#8249;</span>
+  <img class="lightbox__img" src="" alt="">
+  <span class="lightbox__next">&#8250;</span>
+</div>
+<button class="scroll-top" aria-label="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>
+</button>
+<a href="https://wa.me/34618064798" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/main.js?v=4"></script>
+</body>
+</html>
+
