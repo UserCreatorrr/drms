@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hasCookieChoice = localStorage.getItem(cookieConsentKey);
 
   if (!hasCookieChoice) {
+    document.body.classList.add('cookie-visible');
     const cookieBanner = document.createElement('div');
     cookieBanner.className = 'cookie-banner';
     cookieBanner.setAttribute('role', 'dialog');
@@ -155,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cookieBanner.innerHTML = `
       <div class="cookie-banner__content">
         <p class="cookie-banner__title">Aviso de cookies</p>
-        <p class="cookie-banner__text">Utilizamos cookies técnicas necesarias para que la web funcione correctamente. Si en el futuro incorporamos cookies no técnicas, solicitaremos tu consentimiento.</p>
+        <p class="cookie-banner__text">Usamos cookies técnicas necesarias para que la web funcione correctamente.</p>
         <a class="cookie-banner__link" href="cookies.html">Ver política de cookies</a>
       </div>
       <div class="cookie-banner__actions">
@@ -170,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cookieBanner.querySelectorAll('[data-cookie-choice]').forEach(button => {
       button.addEventListener('click', () => {
         localStorage.setItem(cookieConsentKey, button.dataset.cookieChoice);
+        document.body.classList.remove('cookie-visible');
         cookieBanner.classList.remove('is-visible');
         cookieBanner.addEventListener('transitionend', () => cookieBanner.remove(), { once: true });
       });
